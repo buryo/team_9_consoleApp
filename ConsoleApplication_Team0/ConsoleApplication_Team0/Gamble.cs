@@ -16,7 +16,6 @@ namespace Firstc
         private int[] enemyArray = { rnd.Next(1, 6), rnd.Next(1, 6), rnd.Next(1, 6), rnd.Next(1, 6), rnd.Next(1, 6) };
         //Boolean to check if the enemyArray and PlayerArray are equal
         
-
         public void start()
         {
         bool arrayCheck = true;

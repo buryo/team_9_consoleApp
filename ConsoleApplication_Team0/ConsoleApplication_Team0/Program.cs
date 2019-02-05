@@ -4,9 +4,11 @@ using System.Linq;
 using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading;
+using ConsoleApp;
 using System.Threading.Tasks;
 using Firstc;
 using Name;
+using ConsoleColor = System.ConsoleColor;
 
 namespace Opdracht1
 {
@@ -17,7 +19,6 @@ namespace Opdracht1
         static void Main(string[] args)
         {
             //Change the color of the console to blue
-            Console.ForegroundColor = ConsoleColor.Blue;
             start();
         }
 
@@ -25,7 +26,7 @@ namespace Opdracht1
         public static void start()
         {
             Console.WriteLine("Welcome, choose one of the following options: ");
-            Console.WriteLine("1. Your name \n2. Calculator \n3. Your name is \n4. Exit the program\n5. Gamble");
+            Console.WriteLine("1. Your name \n2. Calculator \n3. Your name is \n4. Exit the program\n5. Gamble\n6. Change Color");
 
             //Switch statement for displaying the menu
             switch (Console.ReadLine())
@@ -48,6 +49,11 @@ namespace Opdracht1
                 case "5":
                     Gamble gamble = new Gamble();
                     gamble.start();
+                    start();
+                    break;
+                case "6":
+                    BackGroundColor cs = new BackGroundColor();
+                    cs.ColorChange();
                     start();
                     break;
                 default:
