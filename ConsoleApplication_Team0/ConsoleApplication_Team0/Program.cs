@@ -5,6 +5,7 @@ using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Firstc;
 using Name;
 
 namespace Opdracht1
@@ -24,9 +25,9 @@ namespace Opdracht1
         public static void start()
         {
             Console.WriteLine("Welcome, choose one of the following options: ");
-            Console.WriteLine("1. Your name \n2. Calculator \n3. Your name is \n4. Exit the program");
+            Console.WriteLine("1. Your name \n2. Calculator \n3. Your name is \n4. Exit the program\n5. Gamble");
 
-                //Switch statement for displaying the menu
+            //Switch statement for displaying the menu
             switch (Console.ReadLine())
             {
                 case "1":
@@ -45,6 +46,9 @@ namespace Opdracht1
                     Environment.Exit(-1);
                     break;
                 case "5":
+                    Gamble gamble = new Gamble();
+                    gamble.start();
+                    start();
                     break;
                 default:
                     Console.WriteLine("That's an invalid input try again! \n");
@@ -52,7 +56,6 @@ namespace Opdracht1
                     break;
             }
         }
-
         //Method that adds two values
         public static void getValue()
         {

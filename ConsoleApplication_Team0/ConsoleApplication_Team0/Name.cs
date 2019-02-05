@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Name
 {
-    class NameClass { 
-    private static string name;
-    
+    class NameClass
+    {
+        private static string name;
+
         //Method to enter and display your name
         public void enterName()
         {
@@ -16,14 +17,14 @@ namespace Name
             name = Console.ReadLine();
             Console.WriteLine("Your name is {0} \n", name);
         }
-        
+
         //Method that displays your n ame
-        public  void getName()
+        public void getName()
         {
             if (name != null)
             {
                 Console.WriteLine("Your name is {0} \n", name);
-                
+
             }
             //Show this message when no name is entered(if name == null)
             else

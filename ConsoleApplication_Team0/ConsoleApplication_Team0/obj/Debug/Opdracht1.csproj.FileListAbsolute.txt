@@ -5,3 +5,10 @@ C:\Users\Reggie\source\repos\Firstc\Firstc\obj\Debug\Opdracht1.csprojAssemblyRef
 C:\Users\Reggie\source\repos\Firstc\Firstc\obj\Debug\Opdracht1.csproj.CoreCompileInputs.cache
 C:\Users\Reggie\source\repos\Firstc\Firstc\obj\Debug\Firstc.exe
 C:\Users\Reggie\source\repos\Firstc\Firstc\obj\Debug\Firstc.pdb
+C:\Users\Reggie\Desktop\C\team_9_consoleApp\ConsoleApplication_Team0\ConsoleApplication_Team0\bin\Debug\Firstc.exe.config
+C:\Users\Reggie\Desktop\C\team_9_consoleApp\ConsoleApplication_Team0\ConsoleApplication_Team0\bin\Debug\Firstc.exe
+C:\Users\Reggie\Desktop\C\team_9_consoleApp\ConsoleApplication_Team0\ConsoleApplication_Team0\bin\Debug\Firstc.pdb
+C:\Users\Reggie\Desktop\C\team_9_consoleApp\ConsoleApplication_Team0\ConsoleApplication_Team0\obj\Debug\Opdracht1.csprojAssemblyReference.cache
+C:\Users\Reggie\Desktop\C\team_9_consoleApp\ConsoleApplication_Team0\ConsoleApplication_Team0\obj\Debug\Opdracht1.csproj.CoreCompileInputs.cache
+C:\Users\Reggie\Desktop\C\team_9_consoleApp\ConsoleApplication_Team0\ConsoleApplication_Team0\obj\Debug\Firstc.exe
+C:\Users\Reggie\Desktop\C\team_9_consoleApp\ConsoleApplication_Team0\ConsoleApplication_Team0\obj\Debug\Firstc.pdb
