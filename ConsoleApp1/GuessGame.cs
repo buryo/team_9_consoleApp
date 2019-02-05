@@ -43,14 +43,14 @@ namespace ConsoleApp1
                 
                 if (playerTurn == 1)
                 {
-                    Console.Write("Guess the number " + player1 + ": ");
+                    Console.WriteLine("Guess the number " + player1 + ": ");
 
                     Console.WriteLine("--------------------------------------------------------------");
 
                 }
                 else
                 {
-                    Console.Write("Guess the number " + player2 + ": ");
+                    Console.WriteLine("Guess the number " + player2 + ": ");
 
                     Console.WriteLine("--------------------------------------------------------------");
 
