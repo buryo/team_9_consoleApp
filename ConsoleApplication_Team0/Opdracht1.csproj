@@ -43,9 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackGroundColor.cs" />
-    <Compile Include="Gamble.cs" />
-    <Compile Include="GuessGame.cs" />
     <Compile Include="Name.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
