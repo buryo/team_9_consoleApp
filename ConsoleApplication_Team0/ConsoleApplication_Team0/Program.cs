@@ -24,11 +24,21 @@ namespace Opdracht1
         public static void start()
         {
             Console.WriteLine("Welcome, choose one of the following options: ");
-            Console.WriteLine("1. Your name \n2. Calculator \n3. Your name is \n4. Exit the program");
+            Console.WriteLine("1. Your name \n2. Calculator \n3. Your name is \n4. Exit the program \n5. Calculator Burak");
 
                 //Switch statement for displaying the menu
             switch (Console.ReadLine())
             {
+                //TODO:
+                //case "1":
+                //    {
+                //        var calculator = new Calculator();
+                //        calculator.Calculate();
+                //    }
+                //        catch (Exception)
+                //    {
+                //        Console.WriteLine("\a Something went wrong!"); //Giving friendly error with windows alert sound
+                //    }
                 case "1":
                     name.enterName();
                     start();
@@ -45,6 +55,8 @@ namespace Opdracht1
                     Environment.Exit(-1);
                     break;
                 case "5":
+                    var calculator = new Calculator();
+                    calculator.Calculate();
                     break;
                 default:
                     Console.WriteLine("That's an invalid input try again! \n");
