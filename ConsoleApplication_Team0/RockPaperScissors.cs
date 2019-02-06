@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RockPaperScissorsModule
+namespace Opdracht1
 {
     internal class RockPaperScissors
     {

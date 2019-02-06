@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace QuizModule
+namespace Opdracht1
 {
     internal class Quiz
     {
