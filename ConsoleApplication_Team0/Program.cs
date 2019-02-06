@@ -57,6 +57,7 @@ namespace Opdracht1
                 case "5":
                     var calculator = new Calculator();
                     calculator.Calculate();
+                    start();
                     break;
                 default:
                     Console.WriteLine("That's an invalid input try again! \n");
