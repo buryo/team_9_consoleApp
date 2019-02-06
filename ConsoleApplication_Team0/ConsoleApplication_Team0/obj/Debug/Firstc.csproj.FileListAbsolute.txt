@@ -1,7 +1,0 @@
-C:\Users\Reggie\source\repos\Firstc\Firstc\bin\Debug\Firstc.exe.config
-C:\Users\Reggie\source\repos\Firstc\Firstc\bin\Debug\Firstc.exe
-C:\Users\Reggie\source\repos\Firstc\Firstc\bin\Debug\Firstc.pdb
-C:\Users\Reggie\source\repos\Firstc\Firstc\obj\Debug\Firstc.csprojAssemblyReference.cache
-C:\Users\Reggie\source\repos\Firstc\Firstc\obj\Debug\Firstc.csproj.CoreCompileInputs.cache
-C:\Users\Reggie\source\repos\Firstc\Firstc\obj\Debug\Firstc.exe
-C:\Users\Reggie\source\repos\Firstc\Firstc\obj\Debug\Firstc.pdb
