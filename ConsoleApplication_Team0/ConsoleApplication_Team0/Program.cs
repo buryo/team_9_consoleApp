@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Name;
+using CalculatorModule;
+using RockPaperScissorsModule;
+using QuizModule;
 
 namespace Opdracht1
 {
@@ -44,7 +47,7 @@ namespace Opdracht1
                 case "4":
                     Environment.Exit(-1);
                     break;
-                case "5":
+                case "5":                 
                     break;
                 default:
                     Console.WriteLine("That's an invalid input try again! \n");
