@@ -44,6 +44,7 @@ namespace ConsoleApp
                     break;
                 default:
                     Console.WriteLine("404 Color not found cowboy".PadLeft(50));
+                    ColorChange();
                     break;
             }
         }
