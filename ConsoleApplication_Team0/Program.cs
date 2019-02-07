@@ -32,10 +32,10 @@ namespace Opdracht1
         //Method for starting the app
         public static void start()
         {
-           
+
             Console.WriteLine("----------------------------");
             Console.WriteLine("Choose one of the following options: ");
-            Console.WriteLine("1. Your name \n2. Your name is  \n3. Calculator \n4. Lottery \n5. Rock Paper Scissor  \n6. Change background color \n7. Guess game \n8. Quiz \n9. Exit the program");
+            Console.WriteLine("1. Your name \n2. Your name is  \n3. Sum of two values \n4. Calculator \n5. Lottery \n6. Rock Paper Scissor  \n7. Change background color \n8. Guess game \n9. Quiz \n10. Exit the program");
             Console.WriteLine("----------------------------");
 
             //Switch statement for displaying the menu
@@ -52,41 +52,44 @@ namespace Opdracht1
                     start();
                     break;
                 case "3":
+                    getValues();                 
+                    break;
+                case "4":
                     Console.Clear();
                     var calculator = new Calculator();
                     calculator.Calculate();
                     start();
                     break;
-                case "4":
+                case "5":
                     var gamble = new Lottery();
                     Console.Clear();                 
                     gamble.start();
                     break;
-                case "5":
+                case "6":
                     Console.Clear();
                     var rockPaperS = new RockPaperScissors();
                     rockPaperS.PlayRockPaperScissors();
                     start();
                     break;
-                case "6":
+                case "7":
                     Console.Clear();
                     var cs = new BackGroundColor();
                     cs.ColorChange();
                     start();
                     break;
-                case "7":
+                case "8":
                     Console.Clear();
                     var guessGame = new GuessGame();
                     guessGame.Game();
                     start();
                     break;
-                case "8":
+                case "9":
                     Console.Clear();
                     var quiz = new Quiz();
                     quiz.PlayQuiz();
                     start();
                     break;
-                case "9":
+                case "10":
                     Environment.Exit(-1);
                     break;
                 default:
@@ -95,6 +98,17 @@ namespace Opdracht1
                     start();
                     break;
             }
+
+        }
+        public static void getValues()
+        {
+            Console.WriteLine("Value 1");
+            int value1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Value 2");
+            int value2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("The sum is: " + (value1 + value2));
+            start();
         }
     }
 }
+

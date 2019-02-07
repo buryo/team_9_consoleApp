@@ -55,7 +55,7 @@ namespace Firstc
             }
 
             Console.WriteLine("");
-
+            
             Console.Write("Computer input: ");
             foreach (var ea in enemyArray)
             {
