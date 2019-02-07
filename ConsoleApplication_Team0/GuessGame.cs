@@ -42,6 +42,7 @@ namespace ConsoleApp1
             {
                 try
                 {
+
                     if (playerTurn == 1)
                     {
                         Console.WriteLine("Guess the number " + player1 + ": ");
@@ -103,6 +104,26 @@ namespace ConsoleApp1
                     }
                    
                     
+
+                    Console.WriteLine("Guess the number " + player1 + ": ");
+
+                    Console.WriteLine("--------------------------------------------------------------");
+
+                }
+                else
+                {
+                    Console.WriteLine("Guess the number " + player2 + ": ");
+
+                    Console.WriteLine("--------------------------------------------------------------");
+
+                }
+                string answer = Console.ReadLine(); 
+
+                //This turns the turn between 1 and 2
+                if (playerTurn == 1)
+                {
+                    playerTurn = 2;
+
                 }
                 catch(FormatException)
                 {
