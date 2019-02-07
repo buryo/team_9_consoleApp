@@ -19,19 +19,23 @@ namespace Opdracht1
 
         static void Main(string[] args)
         {
+
             //Forcing console window to fullscreen
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 
             //Change the color of the console to blue
+
+            Console.WriteLine("Welcome to our console application! ");
             start();
         }
 
         //Method for starting the app
         public static void start()
         {
+           
             Console.WriteLine("----------------------------");
-            Console.WriteLine("Welcome, choose one of the following options: ");
-            Console.WriteLine("1. Your name \n2. Your name is  \n3. Calculator \n4. Gamble \n5. Rock Paper Scissor  \n6. Change background color \n7. Guess game \n8. Quiz \n9. Exit the program");
+            Console.WriteLine("Choose one of the following options: ");
+            Console.WriteLine("1. Your name \n2. Your name is  \n3. Calculator \n4. Lottery \n5. Rock Paper Scissor  \n6. Change background color \n7. Guess game \n8. Quiz \n9. Exit the program");
             Console.WriteLine("----------------------------");
 
             //Switch statement for displaying the menu
@@ -51,9 +55,8 @@ namespace Opdracht1
                     start();
                     break;
                 case "4":
-                    var gamble = new Gamble();
+                    var gamble = new Lottery();
                     gamble.start();
-                    start();
                     break;
                 case "5":
                     var rockPaperS = new RockPaperScissors();
