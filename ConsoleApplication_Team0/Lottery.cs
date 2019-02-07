@@ -18,7 +18,7 @@ namespace Firstc
         
         public void start()
         {
-            Console.WriteLine("Try your luck with the lottery! Insert five numbers between 1-6 and check if you won the lottery");
+            Console.WriteLine("Try your luck with the lottery! Insert five numbers between 0-6 and check if you won the lottery");
         bool arrayCheck = true;
         int i = 0;
             //while loop for letting the player enter 5 values
