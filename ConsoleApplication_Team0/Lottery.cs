@@ -35,7 +35,7 @@ namespace Firstc
                     else
                     {
                         //Start over
-                        Console.WriteLine("Please pick a number between 1-5"); 
+                        Console.WriteLine("Please pick a number between 1-6"); 
                         start();
                         
                     }
@@ -48,6 +48,7 @@ namespace Firstc
                 i++;
             }
             //Shows the players input.
+            Console.Write("Your input: ");
             foreach (var ea in playerArray)
             {
                 Console.Write(ea);
@@ -55,6 +56,7 @@ namespace Firstc
 
             Console.WriteLine("");
 
+            Console.Write("Computer input: ");
             foreach (var ea in enemyArray)
             {
                 Console.Write(ea);
@@ -66,18 +68,15 @@ namespace Firstc
                 {
                     arrayCheck = false;
                 }
-                
             }
 
             if (arrayCheck)
             {
-                Console.WriteLine("You won!");
-
+                Console.WriteLine("\nYou won!");
             }
             else
             {
-                Console.WriteLine("You lost!");
-
+                Console.WriteLine("\nYou lost!");
             }
 
             //Switch case to play the game again
