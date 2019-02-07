@@ -58,12 +58,8 @@ namespace Opdracht1
                     start();
                     break;
                 case "4":
-
                     var gamble = new Lottery();
-
-                    Console.Clear();
-                    var gamble = new Gamble();
-
+                    Console.Clear();                 
                     gamble.start();
                     break;
                 case "5":
