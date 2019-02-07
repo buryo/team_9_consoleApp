@@ -4,6 +4,7 @@ namespace ConsoleApp1
 {
     class GuessGame
     {
+        private string answer;
         public void Game()
         {
             Console.WriteLine("Player 1 what is your name?");
@@ -102,37 +103,19 @@ namespace ConsoleApp1
                                 break;
                         }
                     }
-                   
-                    
-
-                    Console.WriteLine("Guess the number " + player1 + ": ");
-
-                    Console.WriteLine("--------------------------------------------------------------");
-
-                }
-                else
+                  
+                } catch(FormatException)
                 {
-                    Console.WriteLine("Guess the number " + player2 + ": ");
-
-                    Console.WriteLine("--------------------------------------------------------------");
-
+                    Console.WriteLine("That is not a number, you lost a turn!");
                 }
-                string answer = Console.ReadLine(); 
-
+              
                 //This turns the turn between 1 and 2
                 if (playerTurn == 1)
                 {
                     playerTurn = 2;
-
-                }
-                catch(FormatException)
-                {
-                    Console.WriteLine("That is not a number, you lost a turn!");
-                }
-
+                }              
             }
             while (win == false);
-
         }
 
     }

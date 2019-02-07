@@ -35,14 +35,14 @@ namespace Firstc
                     else
                     {
                         //Start over
-                        Console.WriteLine("Please pick a number between 1-6"); 
+                        Console.WriteLine("Please pick a number between 0 and 6"); 
                         start();
                         
                     }
                 }
                 catch (System.FormatException e)
                 {
-                    Console.WriteLine("Please enter a number between 1 and 6");
+                    Console.WriteLine("Please enter a number between 0 and 6");
                     start();
                 }
                 i++;
