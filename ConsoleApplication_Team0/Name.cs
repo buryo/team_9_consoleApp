@@ -14,6 +14,7 @@ namespace Name
         {
             Console.WriteLine("Please enter your name: ");
             name = Console.ReadLine();
+            Console.Clear();
             Console.WriteLine("Your name is {0} \n", name);
         }
         
@@ -22,6 +23,7 @@ namespace Name
         {
             if (name != null)
             {
+                Console.Clear();
                 Console.WriteLine("Your name is {0} \n", name);
                 
             }
