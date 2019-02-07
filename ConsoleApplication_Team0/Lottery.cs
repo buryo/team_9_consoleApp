@@ -7,7 +7,7 @@ using Opdracht1;
 
 namespace Firstc
 {
-    class Gamble
+    class Lottery
     {
         //A variable for the computer
         static Random rnd = new Random();
@@ -18,6 +18,7 @@ namespace Firstc
         
         public void start()
         {
+            Console.WriteLine("Try your luck with the lottery! Insert five numbers between 1-6 and check if you won the lottery");
         bool arrayCheck = true;
         int i = 0;
             //while loop for letting the player enter 5 values
@@ -25,8 +26,19 @@ namespace Firstc
             {
                 try
                 {
-                    Console.WriteLine(String.Format("Enter value: {0}", i));
+                    Console.WriteLine(String.Format("Enter value: {0}", i+1));
                     playerArray[i] = Int32.Parse(Console.ReadLine());
+                    if (playerArray[i] >= 0 && playerArray[i] < 6)
+                    {
+                        //Do nothing
+                    }
+                    else
+                    {
+                        //Start over
+                        Console.WriteLine("Please pick a number between 1-5"); 
+                        start();
+                        
+                    }
                 }
                 catch (System.FormatException e)
                 {
@@ -78,6 +90,11 @@ namespace Firstc
                     break;
                 case "N":
                 case "n":
+                    var Program = new Program();
+                    Program.start();
+                    break;
+                default:
+                    start();
                     break;
             }
         }
