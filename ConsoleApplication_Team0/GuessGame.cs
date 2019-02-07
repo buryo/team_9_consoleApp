@@ -40,49 +40,79 @@ namespace ConsoleApp1
             //do loop which loops till number is guessed right. 
             do
             {
-                
-                if (playerTurn == 1)
+                try
                 {
-                    Console.WriteLine("Guess the number " + player1 + ": ");
+                    if (playerTurn == 1)
+                    {
+                        Console.WriteLine("Guess the number " + player1 + ": ");
 
-                    Console.WriteLine("--------------------------------------------------------------");
+                        Console.WriteLine("--------------------------------------------------------------");
 
+                    }
+                    else
+                    {
+                        Console.WriteLine("Guess the number " + player2 + ": ");
+
+                        Console.WriteLine("--------------------------------------------------------------");
+
+                    }
+
+                    string answer = Console.ReadLine();
+
+                    //This turns the turn between 1 and 2
+                    if (playerTurn == 1)
+                    {
+                        playerTurn = 2;
+                    }
+                    else
+                    {
+                        playerTurn = 1;
+                    }
+
+                    //variable answer gets parsed into int i
+                    int i = int.Parse(answer);
+                    if (i > winNumber)
+                    {
+                        Console.WriteLine("You guessed to high! guess again");
+                    }
+                    else if (i < winNumber)
+                    {
+                        Console.WriteLine("You guessed to low! guess again");
+                    }
+                    else if (i == winNumber)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("            -----    -----      ---------       -----    -----       -----                   -----      ---------        -------     -----      ---                       ");
+                        Console.WriteLine("              ---   -----    -----     -----    -----    -----        -----                 -----    -----     -----     --------    -----     -----                              ");
+                        Console.WriteLine("               -- -----     -----       -----   -----    -----         -----       -       -----    -----       -----    ----- ---   -----     -----                                ");
+                        Console.WriteLine("                ------      -----       -----   -----    -----          -----    -----    -----     -----       -----    -----  ---  -----      ---                                ");
+                        Console.WriteLine("                -----        -----     -----    ----- -- -----           -----  --   --  -----       -----     -----     -----   --- -----                               ");
+                        Console.WriteLine("               -----            ---------         ----------              --------    -------           ---------        -----    --------      ---                                  ");
+                        win = true;
+                        Console.WriteLine("Wanna play again? Y/N");
+                        switch (Console.ReadLine())
+                        {
+                            case "Y":
+                            case "y":
+                                Game();
+                                break;
+                            case "N":
+                            case "n":
+                                break;
+                        }
+                    }
+                   
+                    
                 }
-                else
+                catch(FormatException)
                 {
-                    Console.WriteLine("Guess the number " + player2 + ": ");
-
-                    Console.WriteLine("--------------------------------------------------------------");
-
-                }
-                string answer = Console.ReadLine();
-
-                //This turns the turn between 1 and 2
-                if (playerTurn == 1)
-                {
-                    playerTurn = 2;
-                }
-                else
-                {
-                    playerTurn = 1;
+                    Console.WriteLine("That is not a number, you lost a turn!");
                 }
 
+            }
+            while (win == false);
 
-                int i = int.Parse(answer);
-                if (i > winNumber)
-                {
-                    Console.WriteLine("You guessed to high! guess again");
-                }
-                else if (i < winNumber)
-                {
-                    Console.WriteLine("You guessed to low! guess again");
-                }
-                else if (i == winNumber)
-                {
-                    Console.WriteLine("Congratulations! You won!");
-                }
-
-            } while (win == false);
         }
+
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Remoting.Services;
@@ -19,6 +19,9 @@ namespace Opdracht1
 
         static void Main(string[] args)
         {
+            //Forcing console window to fullscreen
+            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+
             //Change the color of the console to blue
             start();
         }
