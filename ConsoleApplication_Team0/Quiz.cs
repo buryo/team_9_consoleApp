@@ -27,7 +27,7 @@ namespace Opdracht1
             userInput1 = Console.ReadLine();
 
             if (string.Equals(userInput1, "no", StringComparison.CurrentCultureIgnoreCase) ||
-                string.Equals(userInput1, "no", StringComparison.CurrentCultureIgnoreCase))
+                string.Equals(userInput1, "false", StringComparison.CurrentCultureIgnoreCase))
             {
                 Console.WriteLine("Correct");
                 score++;

@@ -55,7 +55,7 @@ namespace ConsoleApp1
                     Console.WriteLine("--------------------------------------------------------------");
 
                 }
-                string answer = Console.ReadLine();
+                string answer = Console.ReadLine(); 
 
                 //This turns the turn between 1 and 2
                 if (playerTurn == 1)

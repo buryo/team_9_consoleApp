@@ -35,39 +35,47 @@ namespace Opdracht1
             switch (Console.ReadLine())
             {
                 case "1":
+                    Console.Clear();
                     name.enterName();
                     start();
                     break;
                 case "2":
+                    Console.Clear();
                     name.getName();
                     start();
                     break;
                 case "3":
+                    Console.Clear();
                     var calculator = new Calculator();
                     calculator.Calculate();
                     start();
                     break;
                 case "4":
+                    Console.Clear();
                     var gamble = new Gamble();
                     gamble.start();
                     start();
                     break;
                 case "5":
+                    Console.Clear();
                     var rockPaperS = new RockPaperScissors();
                     rockPaperS.PlayRockPaperScissors();
                     start();
                     break;
                 case "6":
+                    Console.Clear();
                     var cs = new BackGroundColor();
                     cs.ColorChange();
                     start();
                     break;
                 case "7":
+                    Console.Clear();
                     var guessGame = new GuessGame();
                     guessGame.Game();
                     start();
                     break;
                 case "8":
+                    Console.Clear();
                     var quiz = new Quiz();
                     quiz.PlayQuiz();
                     start();
@@ -76,6 +84,7 @@ namespace Opdracht1
                     Environment.Exit(-1);
                     break;
                 default:
+                    Console.Clear();
                     Console.WriteLine("That's an invalid input try again! \n");
                     start();
                     break;

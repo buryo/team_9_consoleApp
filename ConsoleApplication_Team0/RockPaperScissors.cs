@@ -29,16 +29,16 @@ namespace Opdracht1
                     case 1:
                         inputComputer = "rock";
                         Console.WriteLine("Computer chose rock!");
-                        if (inputPlayer == "rock" || inputPlayer == "Rock" || inputPlayer == "ROCK")
+                        if (string.Equals(inputPlayer, "rock", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("it's a draw");
                         }
-                        else if (inputPlayer == "paper" || inputPlayer == "Paper" || inputPlayer == "PAPER")
+                        else if (string.Equals(inputPlayer, "paper", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("Player wins!");
                             scorePlayer++;
                         }
-                        else if (inputPlayer == "scissors" || inputPlayer == "Scissors" || inputPlayer == "Scissors")
+                        else if (string.Equals(inputPlayer, "scissors", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("Computer wins!");
                             scoreComputer++;
@@ -49,16 +49,16 @@ namespace Opdracht1
                     case 2:
                         inputComputer = "paper";
                         Console.WriteLine("Computer chose paper!");
-                        if (inputPlayer == "rock" || inputPlayer == "Rock" || inputPlayer == "ROCK")
+                        if (string.Equals(inputPlayer, "rock", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("Computer wins!");
                             scoreComputer++;
                         }
-                        else if (inputPlayer == "paper" || inputPlayer == "Paper" || inputPlayer == "PAPER")
+                        else if (string.Equals(inputPlayer, "paper", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("it's a draw!");
                         }
-                        else if (inputPlayer == "scissors" || inputPlayer == "Scissors" || inputPlayer == "Scissors")
+                        else if (string.Equals(inputPlayer, "scissors", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("Player wins!");
                             scorePlayer++;
@@ -69,17 +69,17 @@ namespace Opdracht1
                     case 3:
                         inputComputer = "scissors";
                         Console.WriteLine("Computer chose scissors!");
-                        if (inputPlayer == "rock" || inputPlayer == "Rock" || inputPlayer == "ROCK")
+                        if (string.Equals(inputPlayer, "rock", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("Player won!");
                             scorePlayer++;
                         }
-                        else if (inputPlayer == "paper" || inputPlayer == "Paper" || inputPlayer == "PAPER")
+                        else if (string.Equals(inputPlayer, "paper", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("Computer wins!");
                             scoreComputer++;
                         }
-                        else if (inputPlayer == "scissors" || inputPlayer == "Scissors" || inputPlayer == "Scissors")
+                        else if (string.Equals(inputPlayer, "scissors", StringComparison.InvariantCultureIgnoreCase))
                         {
                             Console.WriteLine("It's a draw!");
                         }
